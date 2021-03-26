@@ -1,4 +1,4 @@
-#Dependencies
+Dependencies
 
 1. flask
 2. flask-wtf
