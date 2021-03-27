@@ -1,17 +1,20 @@
 # Project Plan: 
-## Stylized Weather
- - Interactive weather site with custom look based off current weather
- - Make designs for each "type of weather"
- - API will tell everything needed for weather, also more info button
+## "Stylized Weather" 
+ - An interactive weather site with dynamic weather system to show real time data of climate, temperature, time, weather, and more.
+ - Custom designs will be assigned to each type of weather, making a more fluid and connected theme on the website
  - Users will be able to input "opinions" about the weather when logged in
+ - Looking to use 3 databases for login/signup, API, and opinions list
     
 ### Easter egg - same style, different job
-    - Game rating - Other Groups shared API
-    - simular style as rest of site
+    - Game rating - other group's shared API
+    - similar style as rest of site
+    - Journals and important links will be held here
+   
     
 ### About Page - About the team
     - have our favorite weather
     - fun facts and images representing us through weather
+    - contains personal quotes and information
      
  ### Sign up 
     - Login and create account to make your own weather on our site
