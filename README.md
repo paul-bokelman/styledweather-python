@@ -1,19 +1,9 @@
-Dependencies - download to work
-
-1. flask
-2. flask-wtf
-3. wtforms
-4. flask-sqlalchemy
-5. werkzeug
-6. flask-login
-7. email-validator
-
-
--Project Plan: 
- -Stylized Weather
- -Interactive weather site with custom look based off current weather
- -Make designs for each "type of weather"
- -API will tell everything needed for weather, also more info button
+# Project Plan: 
+### Stylized Weather
+ - Interactive weather site with custom look based off current weather
+ - Make designs for each "type of weather"
+ - API will tell everything needed for weather, also more info button
+ - Users will be able to input "opinions" about the weather when logged in
     
  -Easter egg - same style, different job
     -Game rating - Other Groups shared API
@@ -46,5 +36,14 @@ Dependencies - download to work
   -Paul - All API routes
   -Sam - Routes for pages of site
   -Wesley - Routes for static HTML
-      
+  
+  # Dependencies - download to work
+
+1. flask
+2. flask-wtf
+3. wtforms
+4. flask-sqlalchemy
+5. werkzeug
+6. flask-login
+7. email-validator
     
