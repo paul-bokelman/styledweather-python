@@ -9,12 +9,11 @@ Dependencies - download to work
 7. email-validator
 
 
-
- -Project Plan: 
-  -Stylized Weather
-    -Interactive weather site with custom look based off current weather
-    -Make designs for each "type of weather"
-    -API will tell everything needed for weather, also more info button
+-Project Plan: 
+ -Stylized Weather
+ -Interactive weather site with custom look based off current weather
+ -Make designs for each "type of weather"
+ -API will tell everything needed for weather, also more info button
     
  -Easter egg - same style, different job
     -Game rating - Other Groups shared API
