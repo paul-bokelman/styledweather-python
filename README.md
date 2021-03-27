@@ -1,5 +1,5 @@
 # Project Plan: 
-### Stylized Weather
+## Stylized Weather
  - Interactive weather site with custom look based off current weather
  - Make designs for each "type of weather"
  - API will tell everything needed for weather, also more info button
