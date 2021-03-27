@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
-<form method="POST" action="signup">
-  <h2>REGISTER</h2>
+<form method="POST" action="signup" class="login">
+  <h2>Register</h2>
   <!-- IMPORTANT - GENERATES CSRF TOKEN -->
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
   <div>
@@ -37,6 +37,6 @@
     />
   </div>
   <p>Already have an account?<a href="login"> Login.</a></p>
-  <button class="form-button" type="submit">signup</button>
+  <button class="form-button" type="submit">Sign Up</button>
 </form>
 {% endblock %}

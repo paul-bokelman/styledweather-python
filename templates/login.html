@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<form method="POST" action="/login">
+<form method="POST" action="/login" class="login">
   <h2>Login</h2>
   <!-- IMPORTANT - GENERATES CSRF TOKEN -->
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
@@ -26,7 +26,7 @@
     />
   </div>
   <label>
-    <p>Remember me</p>
+    <span>Remember me</span>
     <input
       id="remember"
       name="remember"
