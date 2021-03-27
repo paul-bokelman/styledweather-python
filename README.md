@@ -6,36 +6,36 @@
  - Users will be able to input "opinions" about the weather when logged in
     
 ### Easter egg - same style, different job
-    -Game rating - Other Groups shared API
-    -simular style as rest of site
+    - Game rating - Other Groups shared API
+    - simular style as rest of site
     
 ### About Page - About the team
-    -have our favorite weather
-    -fun facts and images representing us through weather
+    - have our favorite weather
+    - fun facts and images representing us through weather
      
  ### Sign up 
-    -Login and create account to make your own weather on our site
+    - Login and create account to make your own weather on our site
     
  ### Making your own weather
-    -Can create fake city name and ideal weather to display on the site
-    -Same style/art as actual weather for current location
+    - Can create fake city name and ideal weather to display on the site
+    - Same style/art as actual weather for current location
     
  ## Current Indivdual Focus:
-  -Travis - Easter Egg
-  -Paul - Designs for weather
-  -Sam - Sign in page/About page
-  -Wesley - Nav bar/approutes
+  - Travis - Easter Egg
+  - Paul - Designs for weather
+  - Sam - Sign in page/About page
+  - Wesley - Nav bar/approutes
   
 -Blueprints:
-  -app.py is login and logic - has secret route
-  -Siteroutes.py - made to show all static HTML
-  -apiroutes.py - made for all API information for other group
-  -Blueprint is a way to break apart the routes
--Indivdual blueprint to-do:
-  -Travis - everything with secret route
-  -Paul - All API routes
-  -Sam - Routes for pages of site
-  -Wesley - Routes for static HTML
+  - app.py is login and logic - has secret route
+  - Siteroutes.py - made to show all static HTML
+  - apiroutes.py - made for all API information for other group
+  - Blueprint is a way to break apart the routes
+- Indivdual blueprint to-do:
+  - Travis - everything with secret route
+  - Paul - All API routes
+  - Sam - Routes for pages of site
+  - Wesley - Routes for static HTML
   
   # Dependencies - download to work
 
