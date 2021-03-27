@@ -1,8 +1,30 @@
+
+<!-- <h2>Location: {{name}}</h2>
+<h2>Time: {{localtime}}</h2>
+<h2>Weather: {{condition}}</h2>
+<h2>Temperature F: {{tempF}}</h2>
+<h2>Temperature C: {{tempC}}</h2> -->
 {% extends 'base.html' %} {% block content %}
-<h1 class="test">home</h1>
-<h2>Name: {{name}}</h2>
-<h2>localtime: {{localtime}}</h2>
-<h2>condition: {{condition}}</h2>
-<h2>tempF: {{tempF}}</h2>
-<h2>tempC: {{tempC}}</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Location</th>
+        <td scope="col">{{name}}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Time</th>
+        <td>{{localtime}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Weather</th>
+        <td>{{condition}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Temperature</th>
+        <td colspan="2">{{tempF}}</td>
+      </tr>
+    </tbody>
+  </table>
 {% endblock %}
