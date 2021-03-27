@@ -12,12 +12,15 @@ from site_routes import site
 from paul import paul
 from wesley import wesley
 from travis import travis
+from sam import sam
+
 app = Flask(__name__)
 app.register_blueprint(api)
 app.register_blueprint(site)
 app.register_blueprint(paul)
 app.register_blueprint(wesley)
 app.register_blueprint(travis)
+app.register_blueprint(sam)
 
 app.config['SECRET_KEY'] = 'I<+g/P2N$}0GXOf'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
