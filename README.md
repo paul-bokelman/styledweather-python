@@ -5,26 +5,26 @@
  - API will tell everything needed for weather, also more info button
  - Users will be able to input "opinions" about the weather when logged in
     
- -Easter egg - same style, different job
+### Easter egg - same style, different job
     -Game rating - Other Groups shared API
     -simular style as rest of site
     
- -About Page - About the team
+### About Page - About the team
     -have our favorite weather
     -fun facts and images representing us through weather
-    
- -Sign up 
+     
+ ### Sign up 
     -Login and create account to make your own weather on our site
     
- -Making your own weather
+ ### Making your own weather
     -Can create fake city name and ideal weather to display on the site
     -Same style/art as actual weather for current location
     
- -Current Indivdual Focas:
+ ## Current Indivdual Focus:
   -Travis - Easter Egg
   -Paul - Designs for weather
   -Sam - Sign in page/About page
-  -Wesley - Nav bar
+  -Wesley - Nav bar/approutes
   
 -Blueprints:
   -app.py is login and logic - has secret route
