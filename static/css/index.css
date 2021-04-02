@@ -1,10 +1,6 @@
-.test {
-  color: red;
-}
-
-.login{
+.login {
   position: relative;
-  margin:auto;
+  margin: auto;
   width: 400px;
   top: 200px;
   border-style: solid;
@@ -12,4 +8,14 @@
   border-radius: 10px;
   background: rgb(204, 204, 204);
   padding: 20px;
+}
+
+.icon {
+  font-size: 50px;
+  color: #000000;
+  transition: 0.2s ease-in;
+}
+
+.icon:hover {
+  color: #585858;
 }

@@ -1,6 +1,11 @@
 {% extends 'base.html' %} {% block content %}
-<h1>Hello my name is: {{name}}</h1>
-<h2>My favortite language is: {{lang}}</h2>
-<p>A little bit about me: {{desc}}</p>
+<center>
+  <div style="margin-top: 15%">
+    <h1>Hello my name is: {{name}}</h1>
+    <h2>My favorite language is: {{lang}}</h2>
+    <p>A little bit about me: {{desc}}</p>
+    <a class="icon" href="{{github}}"><i class="fab fa-github"></i></a>
+  </div>
+</center>
 
 {% endblock %}
