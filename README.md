@@ -49,4 +49,18 @@
 5. werkzeug
 6. flask-login
 7. email-validator
+
+
+## Mini Lab
+- For point 1 we wrote all of our new class & object code in the corresponding blueprint section
+- On line 4 of the file we defined the class Info to hold data about ourselves. 
+- class Info exsample:
+    - class Info:
+    - name = "Persons name"
+    - lang = "Persons fav language"
+    - desc="Short desc about person"
+    - github="https://github.com/PersonsGithub"
+- From this class we defined a variable to which we can access the different data pieces (object) info = Info()
+- We then displayed the objects by passing them to the html using jinja and rendering them. (line 14)
+- 1 wow that we had was using a link to display as a link in an anchor tag in the html.
     
