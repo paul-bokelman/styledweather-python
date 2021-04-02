@@ -51,7 +51,7 @@
 7. email-validator
 
 
-## Mini Lab
+ # Mini Lab
 - For point 1 we wrote all of our new class & object code in the corresponding blueprint section
 - On line 4 of the file we defined the class Info to hold data about ourselves. 
 - class Info exsample:
