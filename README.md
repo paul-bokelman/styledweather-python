@@ -52,15 +52,17 @@
 
 
  # Mini Lab
-- For point 1 we wrote all of our new class & object code in the corresponding blueprint section
-- On line 4 of the file we defined the class Info to hold data about ourselves. 
-- class Info exsample:
-    - class Info:
-    - name = "Persons name"
-    - lang = "Persons fav language"
-    - desc="Short desc about person"
-    - github="https://github.com/PersonsGithub"
-- From this class we defined a variable to which we can access the different data pieces (object) info = Info()
-- We then displayed the objects by passing them to the html using jinja and rendering them. (line 14)
-- 1 wow that we had was using a link to display as a link in an anchor tag in the html.
     
+Paul - https://github.com/Paul-Bokelman/styledweather-python/commit/5caa57509d33f2e6e4f08dbdd4fe178897b5d983
+
+For point 1 I wrote all of my new class & object code in my corresponding blueprint section (/paul)
+On line 4 of the paul.py file I defined the class Info to hold data about myself. 
+```class Info:
+    name = "Paul"
+    lang = "javascript"
+    desc="I am Paul Bokelman and I really enjoy coding and making cool projects on the internet and solving problems. I also have a very adorable dog."
+    github="https://github.com/Paul-Bokelman"
+ ```
+3. From this class I defined a variable to which I can access the different data pieces (object) info = Info()
+4. I then displayed the objects by passing them to the html using jinja and rendering them. (line 14)
+5. 1 wow that I had was using a link to display as a link in an anchor tag in the html.
