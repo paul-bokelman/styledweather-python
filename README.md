@@ -78,6 +78,6 @@ Wesley - https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599
 1. The class and object code was writen in the idividual file with the root: /wesley
 2. Starting in line 4, the class named **Info** was defined. It is written to assigns 4 variables : name, lang, desc, and github
 3. On line 10, the object is assigned. the object name is info and will be used later to create the outputs
-4. The data is displayed by rendering the template. The data is first passed to individual.html and displayed by activating the object. 
+4. The data is displayed by rendering the template. The data is first passed to individual.html and uses jinja templating (similar to navbars) to create identicle webpages for everyone, but with different individual information.
 5. The WOW factor would be defining the object and moving the data from the object to another html file. This html file, which used jinja, would repeat and create the web pages identically to everyone elses.
 
