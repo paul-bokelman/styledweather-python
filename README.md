@@ -83,14 +83,26 @@ Wesley - https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599
 
 
 Travis- https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599208c94da8dd70bb90f844ac4954fbf
-
-    name = "Travis"
+```name = "Travis"
     lang = "CSS"
     desc="My name is Travis Medley and I love CSS, I like to hangout with friend and play videogames in my free time. I like going to the gym and I currently do swim for DN."
     github="https://github.com/Travis4th"
-1. Teh objects and the classes have their indivdual file name and teh root for mine is /travis
+```
+1. The objects and the classes have their indivdual file name and teh root for mine is /travis
 2. The class called INFO was definded and is showing 4 different variables for me. name, favorite language, description and github.
 3. on line 10 the object is assigned and the name is info and will later create outputs.
 4. The data is shown by rendering the template. The data goes through the indivdual.html and templates it in our indivadual page for each of us.
 5. Our WOW is showing how we can define the object and put it into the template to display is on our indivdual pages.
 
+
+Sam - https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599208c94da8dd70bb90f844ac4954fbf
+```name = "Sam"
+    lang = "HTML/CSS"
+    desc = "My name is Sam Koenig and I like to code in HTML and CSS. CSP is currently my favorite class because I get to be creative when making web pages."
+    github = "https://github.com/samkoenig9"
+```
+1. My individual root is /sam for the objects and classes.
+2. The Info class is defined and shows 4 variables that relate to different things about me: name, favorite language, description, and my github.
+3. The object is assigned on line 10 and given the name Info.
+4. The page is shown by rendering template. The data goes through individual.html and uses variables from our own files.
+5. The WOW is us showing how to define objects and put them into the template on each individual page.
