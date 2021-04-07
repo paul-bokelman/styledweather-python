@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Volume of a Cylinder Calculator</h1>
+<p>V = π r<sup>2</sup> h</p>
+<form method="POST">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <input type="number" name="r" placeholder="Radius" required>
+    <input type="number" name="h" placeholder="Height" required>
+    <input type="submit">
+</form>
+<h1>V = {{output}}</h1>
+
+{% endblock %}
