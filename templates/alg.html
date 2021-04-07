@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h1>calc pythagorean theorem</h1>
+<form method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input type="number" name="a" />
+  <input type="number" name="b" />
+  <input type="submit" />
+</form>
+<h2>c^2 = {{output}}</h2>
+{% endblock %}
