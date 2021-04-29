@@ -32,6 +32,7 @@
     <p>A little bit about me: {{desc}}</p>
     <a class="icon" href="{{github}}"><i class="fab fa-github"></i></a>
   </div>
+  {% if paul %}
   <div class="container">
     <h1>Add field and input numbers or letters to sort</h1>
     <form action="/paul" method="post">
@@ -45,7 +46,36 @@
       <input type="submit" value="Sort" />
     </form>
   </div>
-  </ul>
+  {% else %}
+  <style>
+    input:not(:last-child) {
+      width: 30px;
+    }
+    input:not(.final)::after {
+      content: ",";
+    }
+    span:not(input) {
+      position: relative;
+      top: 4px;
+      font-size: 33px;
+    }
+  </style>
+  <form method="POST">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <span>[</span>
+    <input type="text" required name="input_text[]" placeholder="69" /> ,
+    <input type="text" required name="input_text[]" placeholder="2" /> ,
+    <input type="text" name="input_text[]" placeholder="23" /> ,
+    <input type="text" name="input_text[]" placeholder="21" /> ,
+    <input type="text" name="input_text[]" placeholder="85" /> ,
+    <input class="final" type="text" name="input_text[]" placeholder="42" />
+    <span>]</span>
+    <input type="submit" value="Sort" />
+  </form>
+  <h2>Original: {{original}}</h2>
+  <h2>Sorted: {{sorted}}</h2>
+
+  {% endif %}
 </center>
 
 {% endblock %}
