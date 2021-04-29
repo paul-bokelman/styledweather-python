@@ -20,7 +20,7 @@ def paul_route():
                     arr[j], arr[j+1] = arr[j+1], arr[j]
 
     if request.method == 'GET':
-        return render_template('indiviual.html')
+        return render_template('indiviual.html', name=info.name, lang=info.lang, desc=info.desc, github=info.github, paul=True)
     else:
         input_values = request.form.getlist('input_text[]')
         checkbox_values = request.form.getlist('input_checkbox')
