@@ -38,7 +38,7 @@ def alg():
 
 @site.route("/cylinder", methods=['GET','POST'])
 def cylinder():
-<<<<<<< Updated upstream
+
     class pathCylinder: 
         def __init__(self, r = 0, h = 0, v = 0):
             self._r = r
@@ -62,7 +62,7 @@ def cylinder():
     h = value_array[1]
     v = value_array[2]
     return render_template("cylinder.html", r=r, h=h, output=v)
-=======
+
     r = int(request.form.get("r", False))
     h = int(request.form.get("h", False))
     r_squared = r**2
@@ -121,4 +121,4 @@ def pvnrt():
     pvnrt.setter(request.form.get("p", False),request.form.get("v", False),request.form.get("n", False),request.form.get("t", False))
     output = pvnrt.getter()
     return render_template("pv.html", output = output)
->>>>>>> Stashed changes
+
