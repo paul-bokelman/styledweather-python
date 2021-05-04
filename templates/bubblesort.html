@@ -1,0 +1,76 @@
+{% extends 'base.html'%} {% block content%}
+<script>
+  function add_field() {
+    let total_text = document.getElementsByClassName("input_text");
+    total_text = total_text.length + 1;
+    field_div = document.getElementById("field_div");
+    new_input = `<input type='text' class='form-control' name='input_text[]' id='input_text${total_text}' placeholder='Value: ex: ${Math.floor(Math.random() * 500)}'>`
+    field_div.insertAdjacentHTML("beforeend", new_input);
+  }
+</script>
+{% if paul %}
+  {% if render_output %}
+  <center>
+  <div>
+  <h1>Results (sorted values)</h1>
+  <div>
+  {{output}}
+  </div>
+  </ul>
+  <a href="/paul_bubblesort">back</a>
+  </div>
+</center>
+  {% else %}
+  <center>
+    <style>
+input:not([type='button']):not([type="Submit"]) {
+  width: 50%;
+}
+input:not([type='button']):not([type="Submit"]):not(:first-child) {
+  margin-top: 1rem;
+}
+    </style>
+  <div class="container" id="wrapper">
+      <h3>
+      Add <b>TEXT FIELDS</b> for each number or letter you want sorted then
+      <b>CLICK</b> the <b style="color: red">SORT</b>
+      </h3>
+      <form action="/paul_bubblesort" method="post">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+          <input class="btn btn-primary" type="button" value="Add TextBox" onclick="add_field();" />
+          <span id="field_div"></span>
+      <input class="btn btn-primary" type="submit" value="Sort" />
+      </form>
+  </div>
+</center>
+  {% endif %}
+{% else %}
+<style>
+  input:not(:last-child) {
+    width: 30px;
+  }
+  input:not(.final)::after {
+    content: ",";
+  }
+  span:not(input) {
+    position: relative;
+    top: 4px;
+    font-size: 33px;
+  }
+</style>
+<form method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <span>[</span>
+  <input type="text" required name="input_text[]" placeholder="69" /> ,
+  <input type="text" required name="input_text[]" placeholder="2" /> ,
+  <input type="text" name="input_text[]" placeholder="23" /> ,
+  <input type="text" name="input_text[]" placeholder="21" /> ,
+  <input type="text" name="input_text[]" placeholder="85" /> ,
+  <input class="final" type="text" name="input_text[]" placeholder="42" />
+  <span>]</span>
+  <input type="submit" value="Sort" />
+</form>
+<h2>Original: {{original}}</h2>
+<h2>Sorted: {{sorted}}</h2>
+
+{% endif %} {% endblock %}

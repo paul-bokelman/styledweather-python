@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %} {% if who=="paul" or
+who=="travis"%}
+<h1>calc pythagorean theorem</h1>
+<p>a^2 + b^2 = c^2</p>
+<form method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input type="number" name="a" />
+  <input type="number" name="b" />
+  <input type="submit" />
+</form>
+<h2>{{a}}^2 + {{b}}^2 = {{output}}</h2>
+
+{% elif who == "wesley" %}
+
+<h1>PV=NRT Calculator</h1>
+<form method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input type="number" name="p" placeholder="Pressure" />
+  <input type="number" name="v" placeholder="Volume" />
+  <input type="number" name="n" placeholder="# moles" />
+  <input type="number" name="t" placeholder="Temperature" />
+  <input type="submit" />
+</form>
+<h1>Output = {{output}}</h1>
+
+{% else %}
+
+<h1>Volume of a Cylinder Calculator</h1>
+<p>V = π r<sup>2</sup> h</p>
+<form method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input type="number" name="r" placeholder="Radius" required />
+  <input type="number" name="h" placeholder="Height" required />
+  <input type="submit" />
+</form>
+<h1>V = {{output}}</h1>
+
+{% endif %} {% endblock %}

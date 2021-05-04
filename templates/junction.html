@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+  h1 {
+    text-transform: capitalize;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+</style>
+<center>
+  <div>
+    <h1>{{name}}'s routes</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a class="btn btn-info" href="about_{{name}}">About</a>
+        </div>
+        <div class="col-sm">
+          <a class="btn btn-info" href="{{name}}_minilab">Minilab</a>
+        </div>
+        <div class="col-sm">
+          <a class="btn btn-info" href="{{name}}_bubblesort">Bubblesort</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+{% endblock %}
