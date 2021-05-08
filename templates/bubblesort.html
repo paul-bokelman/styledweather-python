@@ -71,11 +71,30 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
       border: none;
       border-radius: 5px;
       width: 30px;
+      background: rgb(255, 255, 255);
     }
-    .sam-submit {
+    .sam-submit{
+      outline: none;
+      background: rgb(255, 255, 255);
+      font-size: 20px;
+      width: 75%;
       border: none;
-      border-radius: 5px;
-      width: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor:pointer;
+      transition: all .3s;
+    }
+    .sam-submit:hover{
+      background: rgb(219, 219, 219);
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    }
+    .sam-submit:active {
+      transform: translateY(-2px);
+      transform: scale(.98);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+      transition: all .1s;
     }
   </style>
   <form method="POST" class="sam-box">
