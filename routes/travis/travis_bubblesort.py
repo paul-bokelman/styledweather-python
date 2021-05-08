@@ -5,11 +5,11 @@ travis_bubblesort= Blueprint('travis_bubblesort', __name__)
 @travis_bubblesort.route("/travis_bubblesort", methods=['GET','POST'])
 def bubblesort_route():
     def bubbleSort(arr):
-        n = len(arr)
-        for i in range(n-1):
-            for j in range(0, n-i-1):
-                if arr[j] > arr[j+1] :
-                    arr[j], arr[j+1] = arr[j+1], arr[j]
+        count = len(arr)
+        for u in range(count-1):
+            for l in range(0, count-u-1):
+                if arr[l] > arr[l+1] :
+                    arr[l], arr[l+1] = arr[l+1], arr[l]
 
     original = request.form.getlist('input_text[]')
     arr = [1, 2]
