@@ -117,9 +117,6 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
   </form>
 {% elif template=="wesley" %}
 <style>
-  input:not(:last-child) {
-    width: 30px;
-  }
   input:not(.final)::after {
     content: ",";
   }
@@ -130,10 +127,10 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
   }
 
   .wes-box {
-      position: relative;
+    position: relative;
       margin: auto;
       width: 400px;
-      background-color: rgb(172, 172, 172);
+      background-color: rgb(198, 206, 206);
       padding: 20px;
       border-radius: 20px;
       top: 200px;
@@ -146,11 +143,31 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
       border: none;
       border-radius: 5px;
       width: 30px;
+      background: rgb(255, 255, 255);
     }
     .wes-submit {
+      outline: none;
+      background: rgb(91, 97, 102);
+      font-size: 20px;
+      width: 75%;
       border: none;
-      border-radius: 5px;
-      width: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 1000000000000000000px;
+      cursor:pointer;
+      transition: all .3s;
+      height: 75%;
+    }
+    .wes-submit:hover{
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(114, 112, 112, 0.2);
+      background:rgb(118, 172, 223);
+    }
+    .wes-submit:active {
+      transform: translateY(-2px);
+      transform: scale(.98);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+      transition: all .1s;
     }
 
 </style>
