@@ -46,9 +46,6 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
   {% endif %}
   {% elif template=="sam" %}
   <style>
-    input:not(:last-child) {
-      width: 30px;
-    }
     input:not(.final)::after {
       content: ",";
     }
@@ -73,10 +70,12 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
     .sam-input {
       border: none;
       border-radius: 5px;
+      width: 30px;
     }
     .sam-submit {
       border: none;
       border-radius: 5px;
+      width: 100px;
     }
   </style>
   <form method="POST" class="sam-box">
@@ -87,6 +86,8 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
     <input class="sam-input" type="text" name="input_text[]" placeholder="14" /> ,
     <input class="sam-input" type="text" name="input_text[]" placeholder="98" /> ,
     <input class="sam-input" class="final" type="text" name="input_text[]" placeholder="21" />
+    <br>
+    <p></p>
     <input class="sam-submit" type="submit" value="Sort" />
     <p></p>
     <h2>Original: {{original}}</h2>
