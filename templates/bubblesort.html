@@ -112,7 +112,60 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
     <h2>Original: {{original}}</h2>
     <h2>Sorted: {{sorted}}</h2>
   </form>
+{% elif template=="wesley" %}
+<style>
+  input:not(:last-child) {
+    width: 30px;
+  }
+  input:not(.final)::after {
+    content: ",";
+  }
+  span:not(input) {
+    position: relative;
+    top: 4px;
+    font-size: 33px;
+  }
 
+  .wes-box {
+      position: relative;
+      margin: auto;
+      width: 400px;
+      background-color: rgb(172, 172, 172);
+      padding: 20px;
+      border-radius: 20px;
+      top: 200px;
+      border-style: solid;
+      text-align: center;
+      padding-top: 30px;
+      border: none;
+    }
+    .wes-input {
+      border: none;
+      border-radius: 5px;
+      width: 30px;
+    }
+    .wes-submit {
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+    }
+
+</style>
+<form method="POST" class="wes-box">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input class="wes-input" type="text" required name="input_text[]" placeholder="72" /> ,
+  <input class="wes-input" type="text" required name="input_text[]" placeholder="64" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="3" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="14" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="98" /> ,
+  <input class="wes-input" class="final" type="text" name="input_text[]" placeholder="21" />
+  <br>
+  <p></p>
+  <input class="wes-submit" type="submit" value="Sort" />
+  <p></p>
+  <h2>Original: {{original}}</h2>
+  <h2>Sorted: {{sorted}}</h2>
+</form>
 {% else %}
 <style>
   input:not(:last-child) {
