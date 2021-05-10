@@ -44,6 +44,149 @@ input:not([type='button']):not([type="Submit"]):not(:first-child) {
   </div>
 </center>
   {% endif %}
+  {% elif template=="sam" %}
+  <style>
+    input:not(.final)::after {
+      content: ",";
+    }
+    span:not(input) {
+      position: relative;
+      top: 4px;
+      font-size: 33px;
+    }
+    .sam-box {
+      position: relative;
+      margin: auto;
+      width: 400px;
+      background-color: rgb(172, 172, 172);
+      padding: 20px;
+      border-radius: 20px;
+      top: 200px;
+      border-style: solid;
+      text-align: center;
+      padding-top: 30px;
+      border: none;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    }
+    .sam-input {
+      border: none;
+      border-radius: 5px;
+      width: 30px;
+      background: rgb(255, 255, 255);
+    }
+    .sam-submit{
+      outline: none;
+      background: rgb(255, 255, 255);
+      font-size: 20px;
+      width: 75%;
+      border: none;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor:pointer;
+      transition: all .3s;
+    }
+    .sam-submit:hover{
+      background: rgb(219, 219, 219);
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    }
+    .sam-submit:active {
+      transform: translateY(-2px);
+      transform: scale(.98);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+      transition: all .1s;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  </style>
+  <form method="POST" class="sam-box">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <input class="sam-input" type="text" required name="input_text[]" placeholder="72" /> ,
+    <input class="sam-input" type="text" required name="input_text[]" placeholder="64" /> ,
+    <input class="sam-input" type="text" name="input_text[]" placeholder="3" /> ,
+    <input class="sam-input" type="text" name="input_text[]" placeholder="14" /> ,
+    <input class="sam-input" type="text" name="input_text[]" placeholder="98" /> ,
+    <input class="sam-input" class="final" type="text" name="input_text[]" placeholder="21" />
+    <br>
+    <p></p>
+    <input class="sam-submit" type="submit" value="Sort" />
+    <p></p>
+    <h2>Original: {{original}}</h2>
+    <h2>Sorted: {{sorted}}</h2>
+  </form>
+{% elif template=="wesley" %}
+<style>
+  input:not(.final)::after {
+    content: ",";
+  }
+  span:not(input) {
+    position: relative;
+    top: 4px;
+    font-size: 33px;
+  }
+
+  .wes-box {
+    position: relative;
+      margin: auto;
+      width: 400px;
+      background-color: rgb(198, 206, 206);
+      padding: 20px;
+      border-radius: 20px;
+      top: 200px;
+      border-style: solid;
+      text-align: center;
+      padding-top: 30px;
+      border: none;
+    }
+    .wes-input {
+      border: none;
+      border-radius: 5px;
+      width: 30px;
+      background: rgb(255, 255, 255);
+    }
+    .wes-submit {
+      outline: none;
+      background: rgb(91, 97, 102);
+      font-size: 20px;
+      width: 75%;
+      border: none;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 1000000000000000000px;
+      cursor:pointer;
+      transition: all .3s;
+      height: 75%;
+    }
+    .wes-submit:hover{
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(114, 112, 112, 0.2);
+      background:rgb(118, 172, 223);
+    }
+    .wes-submit:active {
+      transform: translateY(-2px);
+      transform: scale(.98);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+      transition: all .1s;
+    }
+
+</style>
+<form method="POST" class="wes-box">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input class="wes-input" type="text" required name="input_text[]" placeholder="72" /> ,
+  <input class="wes-input" type="text" required name="input_text[]" placeholder="64" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="3" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="14" /> ,
+  <input class="wes-input" type="text" name="input_text[]" placeholder="98" /> ,
+  <input class="wes-input" class="final" type="text" name="input_text[]" placeholder="21" />
+  <br>
+  <p></p>
+  <input class="wes-submit" type="submit" value="Sort" />
+  <p></p>
+  <h2>Original: {{original}}</h2>
+  <h2>Sorted: {{sorted}}</h2>
+</form>
 {% else %}
 <style>
   input:not(:last-child) {

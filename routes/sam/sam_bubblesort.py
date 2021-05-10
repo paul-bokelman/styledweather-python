@@ -4,12 +4,12 @@ sam_bubblesort= Blueprint('sam_bubblesort', __name__)
 
 @sam_bubblesort.route("/sam_bubblesort", methods=['GET','POST'])
 def bubblesort_route():
-    def bubbleSort(arr):
-        n = len(arr)
-        for i in range(n-1):
-            for j in range(0, n-i-1):
-                if arr[j] > arr[j+1] :
-                    arr[j], arr[j+1] = arr[j+1], arr[j]
+    def bubbleSort(array):
+        a = len(array)
+        for b in range(a-1):
+            for c in range(0, a-b-1):
+                if array[c] > array[c+1] :
+                    array[c], array[c+1] = array[c+1], array[c]
 
     original = request.form.getlist('input_text[]')
     arr = [1, 2]
@@ -19,4 +19,4 @@ def bubblesort_route():
         else:
             arr = original
         bubbleSort(arr)
-    return render_template("bubblesort.html", original=original, sorted=arr, paul=False)
+    return render_template("bubblesort.html", original=original, sorted=arr, paul=False, template="sam")
