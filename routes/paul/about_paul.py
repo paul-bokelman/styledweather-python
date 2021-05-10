@@ -4,7 +4,7 @@ about_paul = Blueprint('about_paul', __name__)
 class Info:
     name = "Paul"
     lang = "javascript"
-    desc="I am Paul Bokelman and I really enjoy coding and making cool projects on the internet and solving problems. I also have a very adorable dog."
+    desc="I have a dog."
     github="https://github.com/Paul-Bokelman"
 info = Info()
 
