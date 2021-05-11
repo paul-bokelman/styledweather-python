@@ -14,6 +14,7 @@ from routes.travis import about_travis
 from routes.travis import travis_bubblesort
 from routes.travis import travis_minilab
 from routes.wesley import about_wesley
+from routes.wesley import learn_css
 from routes.wesley import wesley_bubblesort
 from routes.wesley import wesley_minilab
 from routes.team.api_routes import api
@@ -38,6 +39,7 @@ app.register_blueprint(travis_minilab.travis_minilab)
 app.register_blueprint(about_wesley.about_wesley)
 app.register_blueprint(wesley_bubblesort.wesley_bubblesort)
 app.register_blueprint(wesley_minilab.wesley_minilab)
+app.register_blueprint(learn_css.learn_css)
 
 app.register_blueprint(api)
 app.register_blueprint(junction)
