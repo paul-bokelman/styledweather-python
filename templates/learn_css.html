@@ -1,4 +1,258 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1 class="color">hi</h1>
+{% extends 'base.html' %} {% block content %} {% block styles %}
+<link rel="stylesheet" href="../static/css/learn_css.css" /> {% endblock styles
+%}
+<div class="main-container">
+  <table id="customers">
+    <tr>
+      <th>No applied CSS</th>
+      <th>CSS</th>
+    </tr>
+    <tr>
+      <td><button>Boring Button</button></td>
+      <td>
+        <button class="button pretty">Pretty</button>
+        <button class="button hover">Hover Me!</button>
+        <button class="button click">Click Me!</button>
+        <button class="button gradient">Gradient</button>
+        <button class="button outline">OUTLINE</button>
+        <i
+          class="fas fa-code"
+          data-bs-toggle="modal"
+          data-bs-target="#buttonModal"
+        ></i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Boring</span>
+      </td>
+      <td>
+        <span class="bold">BOLD</span>
+        <span class="italic">Italic</span>
+        <span class="underline">Underline</span>
+        <span class="strike">Line-through</span>
+        <span class="color">Color</span>
+        <span class="background">Background</span>
+        <i
+          class="fas fa-code"
+          data-bs-toggle="modal"
+          data-bs-target="#textModal"
+        ></i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="box">Static Box</div>
+      </td>
+      <td>
+        <div class="box animated-box">Animated Box</div>
+        <i
+          class="fas fa-code"
+          data-bs-toggle="modal"
+          data-bs-target="#animateModal"
+        ></i>
+      </td>
+    </tr>
+  </table>
+
+  <div
+    class="modal fade"
+    id="buttonModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Styled Buttons</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <pre>
+.button {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    }
+    
+    .pretty {
+    background-color: #f37ddf32;
+    color: #f37ddf;
+    }
+    .hover {
+    background-color: #f3ac7d;
+    }
+    
+    .hover:hover {
+    background-color: #f37d7d;
+    }
+    .click {
+    background-color: #7df3e3;
+    }
+    .click:active {
+    transform: scale(0.7);
+    }
+    
+    .gradient {
+    background: rgb(98, 126, 234);
+    background: linear-gradient(
+        63deg,
+        rgba(98, 126, 234, 1) 0%,
+        rgba(187, 147, 227, 1) 100%
+    );
+    }
+    
+    .outline {
+    background: transparent;
+    color: black;
+    box-shadow: 0px 0px 0px 3px black inset;
+    }</pre
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="animateModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Styled Buttons</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <pre>
+.box {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: #ff7ff9;
+    }
+    
+    @keyframes animate {
+    0% {
+        background-color: #ff7ff9;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: #967fff;
+        transform: rotate(10deg);
+    }
+    50% {
+        background-color: #7ff0ff;
+        left: 550px;
+        top: 0px;
+    }
+    75% {
+        background-color: #7fffaa;
+        transform: rotate(-20deg);
+    }
+    100% {
+        background-color: #ff7ff9;
+        left: 0px;
+    }
+    }
+    
+    .animated-box {
+    position: relative;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }</pre
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="textModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Styled Text</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <pre>
+span {
+            position: relative;
+            top: 4px;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+          }
+          
+          .bold {
+            font-weight: bold;
+          }
+          
+          .italic {
+            font-style: italic;
+          }
+          
+          .underline {
+            text-decoration: underline;
+          }
+          
+          .strike {
+            text-decoration: line-through;
+          }
+          
+          .color {
+            color: #f37ddf;
+          }
+          
+          .background {
+            background-color: yellow;
+          }</pre
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock content %}

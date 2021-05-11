@@ -1,3 +1,156 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0d6efd;
+  color: white;
+}
+
+i {
+  color: #0d6efd;
+  float: right;
+  cursor: pointer;
+}
+
+.button {
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.pretty {
+  background-color: #f37ddf32;
+  color: #f37ddf;
+}
+.hover {
+  background-color: #f3ac7d;
+}
+
+.hover:hover {
+  background-color: #f37d7d;
+}
+.click {
+  background-color: #7df3e3;
+}
+.click:active {
+  transform: scale(0.7);
+}
+
+.gradient {
+  background: rgb(98, 126, 234);
+  background: linear-gradient(
+    63deg,
+    rgba(98, 126, 234, 1) 0%,
+    rgba(187, 147, 227, 1) 100%
+  );
+}
+
+.outline {
+  background: transparent;
+  color: black;
+  box-shadow: 0px 0px 0px 3px black inset;
+}
+
+span {
+  position: relative;
+  top: 4px;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
 .color {
-  color: red;
+  color: #f37ddf;
+}
+
+.background {
+  background-color: yellow;
+}
+
+.box {
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  background-color: #ff7ff9;
+}
+
+@keyframes animate {
+  0% {
+    background-color: #ff7ff9;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #967fff;
+    transform: rotate(10deg);
+  }
+  50% {
+    background-color: #7ff0ff;
+    left: 550px;
+    top: 0px;
+  }
+  75% {
+    background-color: #7fffaa;
+    transform: rotate(-20deg);
+  }
+  100% {
+    background-color: #ff7ff9;
+    left: 0px;
+  }
+}
+
+.animated-box {
+  position: relative;
+  animation-name: animate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
