@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+<a href="{{ url_for('logout') }}">Logout</a>
+<h1>Welcome, {{ name }}</h1>
+
+<h2>Whats your ideal weather?</h2>
+
+{% if record %}
+<h1>Heres your ideal weather</h1>
+<p>{{condition}}</p>
+<p>{{temp}}</p>
+<p>{{desc}}</p>
+<p>{{date}}</p>
+{% else %}
+<form action="{{ url_for('handle_data') }}" method="POST">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+  <input
+    type="text"
+    name="condition"
+    required
+    placeholder="condition (ex: sunny)"
+  />
+  <input type="number" name="temp" required placeholder="temp (ex: 73)" />
+  <input
+    type="text"
+    name="desc"
+    required
+    placeholder="short description (ex: A very sunny day with a small amount of clouds)"
+  />
+  <input type="submit" />
+</form>
+{% endif %} {% endblock content %}
