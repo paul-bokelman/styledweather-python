@@ -38,23 +38,6 @@
   </tbody>
 </table>
 
-<!-- IDEAL WEATHER -->
-
-<form class="row g-3" method="POST">
-  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-  <div class="col-md-6">
-    <label class="form-label">Condition</label>
-    <input required type="text" class="form-control" name="condition" />
-  </div>
-  <div class="col-md-6">
-    <label class="form-label">Temp (f)</label>
-    <input required type="number" name="temp" class="form-control" />
-  </div>
-  <div class="mb-3">
-    <label class="form-label">Short description of weather</label>
-    <textarea required name="desc" class="form-control" rows="3"></textarea>
-  </div>
-  <input type="submit" class="btn btn-primary" value="Submit" />
-</form>
+<a href="/dashboard">Go make your ideal weather!</a>
 
 {% endblock %}

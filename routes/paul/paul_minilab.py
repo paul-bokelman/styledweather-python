@@ -1,6 +1,7 @@
-from flask import Blueprint, render_template, request
+from flask import render_template, request, Blueprint
 import math
-paul_minilab = Blueprint('paul_minilab', __name__)  
+
+paul_minilab = Blueprint('paul_minilab', __name__)
 
 @paul_minilab.route("/paul_minilab", methods=['GET','POST'])
 def minilab_route():

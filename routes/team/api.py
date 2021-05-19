@@ -1,6 +1,7 @@
-from flask import render_template, Blueprint, request
+from flask import render_template, Blueprint, request, jsonify
 import requests as r
 import json as j
+from models import User
 
 api = Blueprint('api', __name__)
 
@@ -15,10 +16,16 @@ def home():
     condition = data.get("current").get("condition").get("text")
     tempF = data.get("current").get("temp_f")
     tempC = data.get("current").get("temp_c")
-
-    iCondition = request.form.get('condition')
-    iTemp = request.form.get('temp')
-    iDesc = request.form.get('desc')
-
-    print(iCondition, iTemp, iDesc)
     return render_template("home.html", name=name, localtime=localtime, condition=condition, tempF=tempF, tempC=tempC) #Fetch rest api data
+
+@api.route('/get_ideal_weather/<query_user>', methods=['GET'])
+def get_weather(query_user):
+    for user in User.query.filter_by(username=query_user):
+        iw = user.ideal_weather[0]
+        return jsonify({'username': user.username, 'ideal_weather': {
+        'date_added': iw.date_added,
+        'condition':  iw.condition,
+        'temp':  iw.temp,
+        'desc': iw.desc,
+        }})
+    return 'Request failed, make sure user exists (case sensitive).', 404

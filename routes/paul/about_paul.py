@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template
+from flask import render_template, Blueprint
+
 about_paul = Blueprint('about_paul', __name__)
 
 class Info:

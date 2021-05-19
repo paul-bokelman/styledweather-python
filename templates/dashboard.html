@@ -1,8 +1,6 @@
 {% extends "base.html" %} {% block content %}
-<a href="{{ url_for('logout') }}">Logout</a>
+<a href="{{ url_for('auth.logout') }}">Logout</a>
 <h1>Welcome, {{ name }}</h1>
-
-<h2>Whats your ideal weather?</h2>
 
 {% if record %}
 <h1>Heres your ideal weather</h1>
@@ -11,7 +9,8 @@
 <p>{{desc}}</p>
 <p>{{date}}</p>
 {% else %}
-<form action="{{ url_for('handle_data') }}" method="POST">
+<h2>Whats your ideal weather?</h2>
+<form action="{{ url_for('auth.handle_data') }}" method="POST">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
   <input
     type="text"

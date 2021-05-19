@@ -1,5 +1,6 @@
-from flask import Blueprint, render_template, request
-paul_bubblesort = Blueprint('paul_bubblesort', __name__)  
+from flask import render_template, request, Blueprint
+
+paul_bubblesort = Blueprint('paul_bubblesort', __name__)
 
 @paul_bubblesort.route("/paul_bubblesort", methods=['GET','POST'])
 def bubblesort_route():

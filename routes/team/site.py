@@ -2,7 +2,6 @@ from flask import render_template, Blueprint
 
 junction = Blueprint('junction', __name__)
 
-
 @junction.route("/paul", methods=['GET', 'POST'])
 def paul_junction(): 
     return render_template("junction.html", name='paul')
