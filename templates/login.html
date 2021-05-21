@@ -48,36 +48,6 @@
     </div>
 </body>
 <script>
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
 
-    signUpButton.addEventListener('click', () => {
-        container.classList.add("right-panel-active");
-    });
-
-    signInButton.addEventListener('click', () => {
-        container.classList.remove("right-panel-active");
-    });
-
-    const darkButton = document.getElementById('dark');
-    const lightButton = document.getElementById('light');
-    const body = document.body;
-    const theme = localStorage.getItem('theme')
-
-    if (theme){
-        body.classList.add(theme);
-    }
-
-    darkButton.onclick = () => {
-        body.classList.replace('light', 'dark');
-        localStorage.setItem('theme', 'dark');
-    };
-
-    lightButton.onclick = () => {
-    body.classList.replace('dark', 'light');
-
-    localStorage.setItem('theme', 'light');
-    };
 </script>
 </html>
