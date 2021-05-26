@@ -9,7 +9,7 @@ api = Blueprint('api', __name__)
 @api.route("/", methods=['GET', 'POST'])
 def home():
     userLocation = request.form.get('location', 'san diego') # search
-    x = r.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}", headers={"content-type":"text", "key":"25a4dc68b6974dde8af192821212203"}) #Fetch rest api data
+    x = r.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}", headers={"content-type":"application/json", "key":"25a4dc68b6974dde8af192821212203"}) #Fetch rest api data
     data = j.loads(x.content) #Fetch rest api data
     name = data.get("location").get("name")
     localtime = data.get("location").get("localtime")
