@@ -258,3 +258,7 @@ input {
 	--grad: var(--color10);
 	--signin: var(--white);
 }
+
+.pads{
+	padding: 5rem 3rem;
+}

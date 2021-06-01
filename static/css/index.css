@@ -19,3 +19,11 @@
 .icon:hover {
   color: #585858;
 }
+
+.pads{
+	padding: 5rem 3rem;
+}
+
+.color{
+  color: red;
+}
