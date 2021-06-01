@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .login {
   position: relative;
   margin: auto;
@@ -6,7 +12,7 @@
   border-style: solid;
   border-color: black;
   border-radius: 10px;
-  background: rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
   padding: 20px;
 }
 
@@ -35,10 +41,11 @@
   width: 30%;
   top: 200px;
   border-style: solid;
-  border-color: #84adff;
   border-radius: 10px;
   background: #9abcff;
   padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
+  border: none;
 }
 
 .wOut{
@@ -76,4 +83,69 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
   transition: all .1s;
   color: black;
+}
+
+.login-box{
+  margin: auto;
+  width: 500px;
+  top:150px;
+  position: relative;
+  background: #9abcff;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
+  border-width: 10px;
+  overflow: hidden;
+}
+
+.login-input {
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.input-label{
+  margin-bottom: 1%;
+  font-size: 20px;
+}
+
+.login-button{
+  outline: none;
+  margin-top:30px;
+  background: rgb(255, 255, 255);
+  font-size: 25px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: all .3s;
+}
+
+.login-button:hover{
+  background: #dde8ff;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.login-button:active {
+  transform: translateY(-2px);
+  transform: scale(.98);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+  transition: all .1s;
+}
+
+.rememberme{
+  margin-top:30px;
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(50, 36, 170);
 }
