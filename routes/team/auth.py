@@ -83,6 +83,10 @@ def handle_data():
     db.session.commit()
     return redirect(url_for('auth.dashboard'))
 
+@auth.route('/easteregg', methods=['GET', 'POST'])
+def easteregg():
+    return render_template('easteregg.html')
+
 @auth.route('/logout')
 @login_required
 def logout():
