@@ -1,25 +1,15 @@
 {% extends "base.html" %} {% block content %}
-<div style="padding: 2rem 5rem;">
-<form method="POST" action="signup">
+<form method="POST" action="signup" class="login-box">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-  <div class="col-md-6">
-    <label for="username" class="form-label">Username</label>
-    <input type="text" class="form-control" id="username" name="username" required>
-  </div>
-  <div class="col-md-6">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  </div>
-  <div class="col-md-6">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password" name="password" required>
-  </div>
-  <p>Already have an account?<a href="login"> Login.</a></p>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </div>
+  <h1 style="margin-top: 0%;">Sign Up</h1>
+  <p class="input-label">Username</p>
+  <input class="login-input" type="text" id="username" name="username" required>
+  <p class="input-label">Password</p>
+  <input class="login-input" type="password" id="password" name="password" required>
+  <p class="input-label">Email</p>
+  <input class="login-input" type="email" id="email" name="email" required>
+  <p style="padding-top: 10px;">Already have an account? <a class="link" href="login">Sign in here.</a></p>
+  <button type="submit" class="login-button">Sign Up</button>
 </form>
-</div>
 {% endblock content %}
-
 
