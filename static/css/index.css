@@ -27,3 +27,53 @@
 .color{
   color: red;
 }
+
+.homebox{
+  position: relative;
+  margin: auto;
+  font-size: 20px;
+  width: 30%;
+  top: 200px;
+  border-style: solid;
+  border-color: #84adff;
+  border-radius: 10px;
+  background: #9abcff;
+  padding: 20px;
+}
+
+.wOut{
+  font-size: 50px;
+}
+
+.form-control{
+  width: 280px;
+}
+
+.button{
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 40%;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: all .3s;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.button:hover{
+  background: #dde8ff;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+  color: black;
+}
+.button:active {
+  transform: translateY(-2px);
+  transform: scale(.98);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+  transition: all .1s;
+  color: black;
+}

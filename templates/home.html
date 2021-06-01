@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block content %}
+<link rel="stylesheet" href="../static/css/index.css">
 <form method="POST">
+  <div class="homebox">
   <div class="input-group">
     <div class="form-outline">
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
@@ -9,35 +11,34 @@
         id="form1"
         name="location"
         class="form-control"
-        placeholder="Enter valid location"
+        placeholder="Enter a City, Place, Zip Code, etc."
       />
     </div>
     <input type="submit" class="btn btn-primary" value="Submit" />
   </div>
 </form>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Location</th>
-      <td scope="col">{{name}}</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Time</th>
-      <td>{{localtime}}</td>
-    </tr>
-    <tr>
-      <th scope="row">Weather</th>
-      <td>{{condition}}</td>
-    </tr>
-    <tr>
-      <th scope="row">Temperature</th>
-      <td colspan="2">{{tempF}}</td>
-    </tr>
-  </tbody>
-</table>
 
-<a href="/dashboard">Go make your ideal weather!</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="row">Location</th>
+        <td class="wOut">{{name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Time</th>
+        <td class="wOut">{{localtime}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Weather</th>
+        <td class="wOut">{{condition}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Temperature</th>
+        <td class="wOut">{{tempF}}</td>
+      </tr>
+    </thead>
+  </table>
+  <a type="button" class="button" href="/dashboard">Go make your ideal weather!</a>
+</div>
 
 {% endblock %}
