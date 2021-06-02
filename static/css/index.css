@@ -10,9 +10,7 @@
   width: 400px;
   top: 200px;
   border-style: solid;
-  border-color: black;
   border-radius: 10px;
-  background: rgb(255, 255, 255);
   padding: 20px;
 }
 
@@ -42,7 +40,7 @@
   top: 200px;
   border-style: solid;
   border-radius: 10px;
-  background: #9abcff;
+  background: var(--foreground);
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
   border: none;
@@ -56,7 +54,7 @@
   width: 280px;
 }
 
-.button{
+.btn2{
   outline: none;
   background: rgb(255, 255, 255);
   font-size: 20px;
@@ -71,13 +69,13 @@
   color: black;
   text-align: center;
 }
-.button:hover{
+.btn2:hover{
   background: #dde8ff;
   transform: translateY(-5px);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
   color: black;
 }
-.button:active {
+.btn2:active {
   transform: translateY(-2px);
   transform: scale(.98);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
@@ -149,4 +147,45 @@
 .link{
   text-decoration: none;
   color: rgb(50, 36, 170);
+}
+
+.weather-input {
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #9abcff;
+  --dark: #353535;
+
+  --foreground: var(--light);
+  --background: var(--dark);
+}
+
+.darkmode {
+  --light: #9abcff;
+  --dark: #353535;
+
+  --foreground: var(--dark);
+  --background: var(--light);
+}
+
+.dark-mode-toggle{
+  border:none;
+  background-color:transparent;
+  color: gray;
 }

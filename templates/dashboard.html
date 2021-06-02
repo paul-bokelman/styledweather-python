@@ -1,30 +1,38 @@
 {% extends "base.html" %} {% block content %}
-<a href="{{ url_for('auth.logout') }}">Logout</a>
-<h1>Welcome, {{ name }}</h1>
 
 {% if record %}
-<h1>Heres your ideal weather</h1>
-<p>{{condition}}</p>
-<p>{{temp}}</p>
-<p>{{desc}}</p>
-<p>{{date}}</p>
+<div class="login-box">
+  <center><h1>Welcome, {{ name }}</h1>
+  <a href="{{ url_for('auth.logout') }}">Logout</a></center>
+  <h1>Your Ideal Weather:</h1>
+  <p> </p>
+  <p>{{condition}}</p>
+  <p>{{temp}}</p>
+  <p>{{desc}}</p>
+  <p>{{date}}</p>
+</div>
 {% else %}
-<h2>Whats your ideal weather?</h2>
-<form action="{{ url_for('auth.handle_data') }}" method="POST">
-  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-  <input
-    type="text"
-    name="condition"
-    required
-    placeholder="condition (ex: sunny)"
-  />
-  <input type="number" name="temp" required placeholder="temp (ex: 73)" />
-  <input
-    type="text"
-    name="desc"
-    required
-    placeholder="short description (ex: A very sunny day with a small amount of clouds)"
-  />
-  <input type="submit" />
-</form>
+<div class="login-box">
+  <h1>Welcome, {{ name }}</h1><a href="{{ url_for('auth.logout') }}">Logout</a>
+  <h2>Whats your ideal weather?</h2>
+  <form action="{{ url_for('auth.handle_data') }}" method="POST">
+    <input class="weather-input" type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <br><input
+      type="text"
+      name="condition"
+      required
+      placeholder="Condition (ex: sunny)"
+      class="weather-input"
+    />
+    <br><input type="number" name="temp" required placeholder="Temp (ex: 73)" class="weather-input" />
+    <br><input
+      type="text"
+      name="desc"
+      required
+      placeholder="Short Description (ex: sunny day with few clouds)"
+      class="weather-input"
+    />
+    <br><input class="btn2" style="margin-top:10px;" type="submit" />
+  </form>
+</div>
 {% endif %} {% endblock content %}
