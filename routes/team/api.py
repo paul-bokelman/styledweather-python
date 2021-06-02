@@ -1,7 +1,7 @@
 from flask import render_template, Blueprint, request, jsonify
 import requests as r
 import json as j
-from models import User
+from models import User, IdealWeather
 
 api = Blueprint('api', __name__)
 
@@ -29,3 +29,21 @@ def get_weather(query_user):
         'desc': iw.desc,
         }})
     return 'Request failed, make sure user exists (case sensitive).', 404
+
+@api.route('/all_users', methods=["GET"])
+def all_users():
+    user_list = User.query.all()
+    users = []
+    for user in user_list: 
+        users.append({'id': user.id, 'name': user.username})
+    response = jsonify({'all_users': users})
+    return response, 200
+
+@api.route('/all_ideal_weathers', methods=["GET"])
+def aiw():
+    iw_list = IdealWeather.query.all()
+    iw = []
+    for iws in iw_list: 
+        iw.append({'id': iws.id, 'owner_id': iws.user_id, 'condition': iws.condition, 'temp': iws.temp, 'desc': iws.desc, 'date_added': iws.date_added})
+    response = jsonify({'all_ideal_weathers': iw})
+    return response, 200
