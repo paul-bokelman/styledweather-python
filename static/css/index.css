@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -188,4 +188,36 @@
   border:none;
   background-color:transparent;
   color: gray;
+}
+
+.background{
+  background-image: url("../media/pic.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+.bigbox{
+  position: relative;
+  margin: auto;
+  width: 500px;
+  background-color: rgb(134, 96, 184);
+  padding: 20px;
+  top: 300px;
+  border-radius: 20px;
+  height: 347px;
+}
+
+.eastertitle{
+  position: relative;
+  margin: auto;
+  width: 500px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 30px;
+  top: 250px;
 }
