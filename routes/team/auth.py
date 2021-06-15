@@ -4,6 +4,7 @@ from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
+import requests
 
 from models import db, User, IdealWeather
 
@@ -82,10 +83,6 @@ def handle_data():
     db.session.add(iw)
     db.session.commit()
     return redirect(url_for('auth.dashboard'))
-
-@auth.route('/easteregg', methods=['GET', 'POST'])
-def easteregg():
-    return render_template('easteregg.html')
 
 @auth.route('/logout')
 @login_required
