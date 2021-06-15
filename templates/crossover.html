@@ -1,28 +1,31 @@
 {% extends 'base.html' %} {% block content %}
-<div class="cr">
-  <h1 class="h">
-    Todos by user
-    <a href="https://p2-anteaters-todos.netlify.app/">(P2Anteaters)</a>
-  </h1>
+  <div class="cr">
+    <div class="cbox">
+    <h1 class="h">
+      Todos by user
+      <a href="https://p2-anteaters-todos.netlify.app/">(P2Anteaters)</a>
+    </h1>
 
-  <h2 class="sh">Get a users todo</h2>
+    <h2 class="sh">Get a users todo</h2>
 
-  <form action="{{ url_for('api.crossover') }}" method="POST">
-    <input
-      class="weather-input"
-      type="hidden"
-      name="csrf_token"
-      value="{{ csrf_token() }}"
-    />
-    <select name="user">
-      {% for user in u %}
-      <option value="{{user.name}}">{{user.name}}</option>
-      {% endfor %}
-    </select>
-    <input type="submit" />
-  </form>
-
+    <form action="{{ url_for('api.crossover') }}" method="POST">
+      <input
+        class="weather-input"
+        type="hidden"
+        name="csrf_token"
+        value="{{ csrf_token() }}"
+      />
+      <select name="user">
+        {% for user in u %}
+        <option value="{{user.name}}">{{user.name}}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" />
+    </form>
+    </div>
   {% if r != none %}
+  <div style="height:50px"></div>
+  <div class="cbox">
   <div class="u">
     <h1 class="uh">Users todos</h1>
     <hr />
@@ -39,8 +42,10 @@
       <h3 class="un">Name: {{todo.name}}</h3>
       <p class="ud">Description: {{todo.desc}}</p>
     </div>
-    {% endfor %}
+    {% endfor %} 
+  </div>
+  </div>
   </div>
   {% endif %}
-</div>
+  
 {% endblock content %}
