@@ -22,7 +22,7 @@
     - Can create fake city name and ideal weather to display on the site
     - Same style/art as actual weather for current location
     
- ## Current Indivdual Focus:
+ ## Indivdual Focus:
   - Travis - Crossover API
   - Paul - Making API
   - Sam - Sign in page/About page
