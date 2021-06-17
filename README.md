@@ -1,5 +1,5 @@
 # Final Point Grading Justification
-## Theme Section
+## Theme Section (5/5)
  - 4 Interactables (+2) and Data Driven page justification with code  (+2): 
     * [Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58) 
         * Data driven page which stores user input into database. Data can be retrieved later to give access to dashboard of website.   
@@ -13,14 +13,13 @@
     * User is able to find any weather information from ANYWHERE on the world. Feel free to explore each corner of the globe! 
   ![](/static/media/Interact.PNG)
 
-## Individual Section
+## Individual Section (5/5)
 - 4 Individual labs (+4)
 - 2 Technicals (+1)
 - Each Individual Section: [Paul](https://fish.nighthawkcodingsociety.com/paul), [Sam](https://fish.nighthawkcodingsociety.com/sam), [Travis](https://fish.nighthawkcodingsociety.com/travis), [Wesley](https://fish.nighthawkcodingsociety.com/wesley)
 - [Blueprint organization for individual areas](https://github.com/Paul-Bokelman/styledweather-python/blob/81050ce2e87bab58a690581f157ea59da9e94a61/app.py#L23-L34)
 - Each page looks the same and is easy to navigate, and getting to each page is easy too.
 ![](static/media/dropdown.png)
-- 5/5 Points
 
 # Project Plan: 
 ## "Stylized Weather" 
