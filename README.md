@@ -6,6 +6,14 @@
  * [Current weather search](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19); Uses API to tell weather and condition statistics 
  * [Crossover team API interaction](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61)
 
+## Individual Section
+- 4 Individual labs (+4)
+- 2 Technicals (+1)
+- Each Individual Section: [Paul](https://fish.nighthawkcodingsociety.com/paul), [Sam](https://fish.nighthawkcodingsociety.com/sam), [Travis](https://fish.nighthawkcodingsociety.com/travis), [Wesley](https://fish.nighthawkcodingsociety.com/wesley)
+- [Blueprint organization for individual areas](https://github.com/Paul-Bokelman/styledweather-python/blob/81050ce2e87bab58a690581f157ea59da9e94a61/app.py#L23-L34)
+- Each page looks the same and is easy to navigate, and getting to each page is easy too.
+![](static/media/dropdown.png)
+- 5/5 Points
 
 # Project Plan: 
 ## "Stylized Weather" 
