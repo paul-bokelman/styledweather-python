@@ -14,9 +14,9 @@
   ![](/static/media/Interact.PNG)
 
 ## Individual Section (5/5)
-- 4 Individual labs (+4)
+* 4 Individual labs (+4)
+  * Each Individual Section: [Paul](https://fish.nighthawkcodingsociety.com/paul), [Sam](https://fish.nighthawkcodingsociety.com/sam), [Travis](https://fish.nighthawkcodingsociety.com/travis), [Wesley](https://fish.nighthawkcodingsociety.com/wesley)  
 - 2 Technicals (+1)
-- Each Individual Section: [Paul](https://fish.nighthawkcodingsociety.com/paul), [Sam](https://fish.nighthawkcodingsociety.com/sam), [Travis](https://fish.nighthawkcodingsociety.com/travis), [Wesley](https://fish.nighthawkcodingsociety.com/wesley)
 - [Blueprint organization for individual areas](https://github.com/Paul-Bokelman/styledweather-python/blob/81050ce2e87bab58a690581f157ea59da9e94a61/app.py#L23-L34)
 - Each page looks the same and is easy to navigate, and getting to each page is easy too.
 ![](static/media/dropdown.png)
