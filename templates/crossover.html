@@ -15,12 +15,12 @@
         name="csrf_token"
         value="{{ csrf_token() }}"
       />
-      <select name="user">
+      <select name="user" class="form-select" style="width:200px">
         {% for user in u %}
         <option value="{{user.name}}">{{user.name}}</option>
         {% endfor %}
       </select>
-      <input type="submit" />
+      <input type="submit" class="btn btn-primary"/>
     </form>
     </div>
   {% if r != none %}
@@ -35,8 +35,8 @@
         <h2 class="ui">id: {{todo.id}}</h2>
         <div class="uc">
           {% if todo.completed == false %}
-          <span class="stat i">Incomplete</span> {% else %}
-          <span class="stat c">Completed</span> {% endif %}
+          <span class="stat i" style="border-radius:10px">Incomplete</span> {% else %}
+          <span class="stat c" style="border-radius:10px">Completed</span> {% endif %}
         </div>
       </div>
       <h3 class="un">Name: {{todo.name}}</h3>
