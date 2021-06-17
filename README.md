@@ -2,7 +2,6 @@
 ## Theme Section
  - 4 Interactables (+2) and Data Driven page justification with code  (+2): 
     * [Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58) 
-    * ![](/static/media/Interact.png)
         * Data driven page which stores user input into database. Data can be retrieved later to give access to dashboard of website.   
     * [Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85) 
         * Data driven page which stores user's descriptions. Will be stored forever, and tells users what their ideal weather is.  
