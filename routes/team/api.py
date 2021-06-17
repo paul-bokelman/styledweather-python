@@ -51,11 +51,11 @@ def aiw():
 @api.route('/crossover', methods=['GET', 'POST'])
 def crossover():
 
-    u = requests.get("http://antsapi.nighthawkcodingsociety.com/all_users").json()['all_users']
+    u = requests.get("https://antsapi.nighthawkcodingsociety.com/all_users").json()['all_users']
     r = None
     if request.method == "POST":
         usr = request.form.get('user', "kenzie")
-        r = requests.get(f"http://antsapi.nighthawkcodingsociety.com/todos/{usr}").json()['todos']
+        r = requests.get(f"https://antsapi.nighthawkcodingsociety.com/todos/{usr}").json()['todos']
 
 
     return render_template('crossover.html', r=r, u=u)
