@@ -1,3 +1,8 @@
+# Final Point Grading Justification
+## Theme Section
+ - 4 Interactables: Login/Signup="https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58" , Ideal weather user input="https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85", Current weather search="https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19", Crossover team API interaction="https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61" 
+
+
 # Project Plan: 
 ## "Stylized Weather" 
  - An interactive weather site with dynamic weather system to show real time data of climate, temperature, time, weather, and more.
@@ -22,7 +27,7 @@
     - Can create fake city name and ideal weather to display on the site
     - Same style/art as actual weather for current location
     
- ## Indivdual Focus:
+ ## Current Indivdual Focus:
   - Travis - Crossover API
   - Paul - Making API
   - Sam - Sign in page/About page
