@@ -5,10 +5,10 @@
  - Users will be able to input "opinions" about the weather when logged in
  - Looking to use 3 databases for login/signup, API, and opinions list
     
-### Easter egg - same style, different job
-    - Game rating - other group's shared API
-    - similar style as rest of site
-    - Journals and important links will be held here
+### Crossover API - same style, different job
+    - Todos - other group's shared API, make reminders!
+    - similar style as rest of site, custom to API group
+    - Crossover API will be held here
    
     
 ### About Page - About the team
