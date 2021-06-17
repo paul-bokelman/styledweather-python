@@ -18,7 +18,7 @@
  ### Sign up 
     - Login and create account to make your own weather on our site and your ideal weather!
     
- ### Making your own weather
+ ### Making your ideal weather
     - Can create fake city name and ideal weather to display on the site
     - Same style/art as actual weather for current location
     
