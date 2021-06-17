@@ -1,6 +1,10 @@
 # Final Point Grading Justification
 ## Theme Section
- - 4 Interactables: [Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58) , [Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85), [Current weather search](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19), [Crossover team API interaction](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61)
+ - 4 Interactables (+2): 
+   -[Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58) ,   
+   -[Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85), 
+   -[Current  weather search](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19), 
+   -[Crossover team API interaction](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61)
 
 
 # Project Plan: 
