@@ -11,7 +11,7 @@
         * Data driven page which accesses crossover team API. Select a user from the list, and find their "To Do" list from the API. 
   - Something fun/interesting on site! (+1)
     * User is able to find any weather information from ANYWHERE on the world. Feel free to explore each corner of the globe! 
-  
+  ![](/static/media/Interact.PNG)
 
 ## Individual Section
 - 4 Individual labs (+4)
