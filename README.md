@@ -2,8 +2,8 @@
 ## Theme Section
  - 4 Interactables (+2): 
  * [Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58); Stores user input into database which can be retrieved later to give access to dashboard of website.   
- * [Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85), 
- * [Current  weather search](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19), 
+ * [Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85); Stores user's descriptions. Will be stored forever, and tells users what their ideal weather is.  
+ * [Current weather search](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L8-L19); Uses API to tell weather and condition statistics 
  * [Crossover team API interaction](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61)
 
 
