@@ -10,22 +10,21 @@
     - similar style as rest of site, custom to API group
     - Crossover API will be held here
    
-    
 ### About Page - About the team
     - have our favorite weather
     - fun facts and images representing us through weather
-    - contains personal quotes and information
+    - contains minilabs and bubble sorts
      
  ### Sign up 
-    - Login and create account to make your own weather on our site
+    - Login and create account to make your own weather on our site and your ideal weather!
     
  ### Making your own weather
     - Can create fake city name and ideal weather to display on the site
     - Same style/art as actual weather for current location
     
  ## Current Indivdual Focus:
-  - Travis - Easter Egg
-  - Paul - Designs for weather
+  - Travis - Crossover API
+  - Paul - Making API
   - Sam - Sign in page/About page
   - Wesley - Nav bar/approutes
   
