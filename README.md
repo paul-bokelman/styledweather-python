@@ -3,7 +3,7 @@
 
 # Theme Section
 
-- 4 Interactables (+2) and Data Driven page justification with code (+2):
+## Interactables and data driven pages
   - [Login/Signup](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L1-L58)
     - Data driven page which stores user input into database. Data can be retrieved later to give access to dashboard of website.
   - [Ideal weather user input](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/auth.py#L76-L85)
@@ -12,7 +12,7 @@
     - Data driven page which uses API to tell weather and condition statistics. The statistics will be displayed on the page.
   - [Crossover team API interaction](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/team/api.py#L51-L61)
     - Data driven page which accesses crossover team API. Select a user from the list, and find their "To Do" list from the API.
-- Something fun/interesting on site! (+1)
+## Fun and interesting
   - User is able to find any weather information from ANYWHERE on the world. Feel free to explore each corner of the globe!
   <details>
   <summary>Images for reference</summary>
