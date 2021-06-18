@@ -15,7 +15,7 @@
   <summary>Images for reference</summary>
 
 
-  ![](/static/media/Int.PNG) 
+  ![](/static/media/int.PNG) 
   
   ![](/static/media/Interact.PNG)
   </details>
