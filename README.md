@@ -11,16 +11,83 @@
         * Data driven page which accesses crossover team API. Select a user from the list, and find their "To Do" list from the API. 
   - Something fun/interesting on site! (+1)
     * User is able to find any weather information from ANYWHERE on the world. Feel free to explore each corner of the globe! 
-  ![](/static/media/Interact.PNG)
+  <details>
+  <summary>Images for reference</summary>
 
+
+  ![](/static/media/Int.PNG)
+  ![](/static/media/Interact.PNG)
+  </details>
+  
+&nbsp;
+___________________________
 ## Individual Section (5/5)
 * 4 Individual labs (+4)
-  * Each Individual Section: [Paul](https://fish.nighthawkcodingsociety.com/paul), [Sam](https://fish.nighthawkcodingsociety.com/sam), [Travis](https://fish.nighthawkcodingsociety.com/travis), [Wesley](https://fish.nighthawkcodingsociety.com/wesley)  
+<details>
+<summary>Paul</summary>
+
+
+  * [Paul's page](https://fish.nighthawkcodingsociety.com/paul)
+  * [About page code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/paul/about_paul.py)
+  * [Bubble Sort code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/paul/paul_bubblesort.py)
+  * [Minilab](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/paul/paul_minilab.py)
+</details>
+
+<details>
+<summary>Sam </summary>
+
+
+* [Sam's page](https://fish.nighthawkcodingsociety.com/sam)
+* [About page code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/sam/about_sam.py)
+* [Bubble Sort code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/sam/sam_bubblesort.py)
+* [Minilab](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/sam/sam_minilab.py)
+</details>
+<details>
+<summary>Wesley</summary>
+
+
+* [Wesley's page](https://fish.nighthawkcodingsociety.com/wesley)  
+* [About page code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/wesley/about_wesley.py)
+* [Bubble Sort code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/wesley/wesley_bubblesort.py)
+* [Minilab](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/wesley/wesley_minilab.py)
+</details>
+<details>
+<summary>Travis</summary>
+
+
+* [Travis's page](https://fish.nighthawkcodingsociety.com/travis)
+* [About page code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/travis/about_travis.py)
+* [Bubble Sort code](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/travis/travis_bubblesort.py)
+* [Minilab](https://github.com/Paul-Bokelman/styledweather-python/blob/master/routes/travis/travis_minilab.py)
+</details> 
+&nbsp;
+
 - 2 Technicals (+1)
   * [Blueprint organization for individual areas](https://github.com/Paul-Bokelman/styledweather-python/blob/81050ce2e87bab58a690581f157ea59da9e94a61/app.py#L23-L34)
-- Each page looks the same and is easy to navigate, and getting to each page is easy too.
+```py app.register_blueprint(about_paul.about_paul)
+app.register_blueprint(paul_bubblesort.paul_bubblesort)
+app.register_blueprint(paul_minilab.paul_minilab)
+app.register_blueprint(about_sam.about_sam)
+app.register_blueprint(sam_bubblesort.sam_bubblesort)
+app.register_blueprint(sam_minilab.sam_minilab)
+app.register_blueprint(about_travis.about_travis)
+app.register_blueprint(travis_bubblesort.travis_bubblesort)
+app.register_blueprint(travis_minilab.travis_minilab)
+app.register_blueprint(about_wesley.about_wesley)
+app.register_blueprint(wesley_bubblesort.wesley_bubblesort)
+app.register_blueprint(wesley_minilab.wesley_minilab)
+```
+
+- Each page looks the same and is easy to navigate. Accessing each page can be done through the dropdowns and buttons.
+<details><summary>Images for refrence (Dropdown)</summary>
 
 ![Dropdown](static/media/dropdown.png)
+![Dropdown](static/media/yes1.png)
+![Dropdown](static/media/yes2.png)
+![Dropdown](static/media/yes3.png)
+![Dropdown](static/media/yes5.png)
+</details>
+&nbsp;
 
 # Project Plan: 
 ## "Stylized Weather" 
