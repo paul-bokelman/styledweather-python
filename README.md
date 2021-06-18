@@ -129,3 +129,74 @@ Sam - https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599208
 3. The object is assigned on line 10 and given the name Info.
 4. The page is shown by rendering template. The data goes through individual.html and uses variables from our own files.
 5. The WOW is us showing how to define objects and put them into the template on each individual page.
+
+## Api
+
+Our API is one of the more impressive feats of computer science engineering in our project. Not only do we have a fully functional API that can relay data from our local database to other origins, we also have a template and logic dedicated to integrating our crossover teams own API. On top of this our home page is rendered from our api file because behind the pretty template we take the form input and use it to get the current data for the location from a public weather api.
+
+##### Global weather search
+
+If you have ever visited [styled-weather](https://fish.nighthawkcodingsociety.com/) you'll know that you are immediately presented with a beautiful search bar and display of the current weather in your area, but behind the well organized html and css what is happening?
+
+Contrary to what many may think, handling the search process is actually incredibly simple. It all starts with our [public api](http://api.weatherapi.com) that we are accessing data from, by default you can pass a query (q) parameter in the url in order to get back certain data for a location, for example with a valid API key the url, http://api.weatherapi.com/v1/forecast.json?q=San%20diego would return the current weather data for San diego. The information is useful to understand because what we can do is get the users input through flasks request module then simply use string concatenation to input the incoming value into the request to get back the corresponding data back.
+
+```py
+userLocation = request.form.get('location', 'san diego')
+x = requests.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}", headers={"content-type":"application/json", "key":"YOUR API KEY"})
+```
+
+The response is then deconstructed into several variables to then render in the home.html template.
+
+##### Routes
+
+Our application has 3 custom API routes that all serve different purposes. One of the main things that we focused on when engineering our API routes was that we wanted them to be very simple for another developer to use, this includes the route itself being specific as well as the response data being structured nicely.
+
+###### [/all_ideal_weathers](https://fish.nighthawkcodingsociety.com/all_ideal_weathers)
+
+Method: **GET**
+
+The /all_ideal_weathers route is very simple in that it simply gets all of the entries in the IdealWeather table from the database then returns the response in the form of an array to be easily iterated over by another developer.
+
+You can checkout the source code for this route [here](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L42-L49).
+
+###### [/get_ideal_weather/username](https://fish.nighthawkcodingsociety.com/get_ideal_weather/Paul)
+
+Method: **GET**
+
+One of the more impressive and helpful routes is the /get_ideal_weather/username route. This route takes a url parameter (username), this parameter is the username of an already registered user, if the username inputted is indeed a valid user then the response will include that particular users ideal weather.
+
+For example if I wanted to see the ideal weather for the user of "Paul" I would make a request to /get_ideal_weather/Paul, the response of this request would be:
+
+```json
+{
+  "username": "Paul",
+  "ideal_weather": {
+    "date_added": "Sat, 15 May 2021 02:46:11 GMT",
+    "condition": "cloudy",
+    "temp": 64,
+    "desc": "A very cloudy day"
+  }
+}
+```
+
+You can checkout the source code for this route [here](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L21-L31).
+
+###### [/all_users](https://fish.nighthawkcodingsociety.com/all_users)
+
+Method: **GET**
+
+Similar to the logic of the /all_ideal_weathers route the /all_users route simply queries through the User table, gets all of the entries and returns the username field for each.
+
+You can checkout the source code for this route [here](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L33-L40).
+
+##### Crossover
+
+Our crossover group was [p2anteaters](https://p2anteaters-todos.tk/), this group created a "todo" list application so the data that we pulled from their api was a particular users "todos" filtered by username.
+
+Similar to our API routes they also had an /all_users route as well a route to get all the todos of a particular user. With this limited data we decided to first get all the users then use that data to allow for the user to choose which todo user they want to get the todo back for.
+
+![Crossover](/static/media/crossover.png)
+
+Check out the [page](https://fish.nighthawkcodingsociety.com/crossover) and the source code for the [python](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L51-L61) and [html](https://github.com/Paul-Bokelman/styledweather-python/blob/master/templates/crossover.html).
+
+The anteaters also used our api to display data from our database on their site! Check it out [here](https://p2anteaters-todos.tk/crossover_api).
