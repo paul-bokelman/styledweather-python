@@ -83,10 +83,10 @@ app.register_blueprint(wesley_minilab.wesley_minilab)
 <details><summary>Images for refrence (Dropdown)</summary>
 
 ![Dropdown](static/media/dropdown.png)
-![Dropdown](static/media/yes1.png)
-![Dropdown](static/media/yes2.png)
-![Dropdown](static/media/yes3.png)
-![Dropdown](static/media/yes5.png)
+![Dropdown](static/media/Yes1.png)
+![Dropdown](static/media/yes2.PNG)
+![Dropdown](static/media/yes3.PNG)
+![Dropdown](static/media/yes5.PNG)
 </details>
 &nbsp;
 
