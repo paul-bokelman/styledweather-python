@@ -134,7 +134,7 @@ Sam - https://github.com/Paul-Bokelman/styledweather-python/commit/0919676599208
 
 Our API is one of the more impressive feats of computer science engineering in our project. Not only do we have a fully functional API that can relay data from our local database to other origins, we also have a template and logic dedicated to integrating our crossover teams own API. On top of this our home page is rendered from our api file because behind the pretty template we take the form input and use it to get the current data for the location from a public weather api.
 
-##### Global weather search
+#### Global weather search
 
 If you have ever visited [styled-weather](https://fish.nighthawkcodingsociety.com/) you'll know that you are immediately presented with a beautiful search bar and display of the current weather in your area, but behind the well organized html and css what is happening?
 
@@ -147,11 +147,11 @@ x = requests.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}",
 
 The response is then deconstructed into several variables to then render in the home.html template.
 
-##### Routes
+#### Routes
 
 Our application has 3 custom API routes that all serve different purposes. One of the main things that we focused on when engineering our API routes was that we wanted them to be very simple for another developer to use, this includes the route itself being specific as well as the response data being structured nicely.
 
-###### [/all_ideal_weathers](https://fish.nighthawkcodingsociety.com/all_ideal_weathers)
+##### [/all_ideal_weathers](https://fish.nighthawkcodingsociety.com/all_ideal_weathers)
 
 Method: **GET**
 
@@ -159,7 +159,7 @@ The /all_ideal_weathers route is very simple in that it simply gets all of the e
 
 You can checkout the source code for this route [here](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L42-L49).
 
-###### [/get_ideal_weather/username](https://fish.nighthawkcodingsociety.com/get_ideal_weather/Paul)
+##### [/get_ideal_weather/username](https://fish.nighthawkcodingsociety.com/get_ideal_weather/Paul)
 
 Method: **GET**
 
@@ -189,7 +189,7 @@ Similar to the logic of the /all_ideal_weathers route the /all_users route simpl
 
 You can checkout the source code for this route [here](https://github.com/Paul-Bokelman/styledweather-python/blob/e9d71e7f3d5a101eb3d5a05a715307af3e26aaaf/routes/team/api.py#L33-L40).
 
-##### Crossover
+#### Crossover
 
 Our crossover group was [p2anteaters](https://p2anteaters-todos.tk/), this group created a "todo" list application so the data that we pulled from their api was a particular users "todos" filtered by username.
 
