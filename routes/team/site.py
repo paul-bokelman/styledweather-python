@@ -1,4 +1,5 @@
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, request
+import requests
 
 junction = Blueprint('junction', __name__)
 

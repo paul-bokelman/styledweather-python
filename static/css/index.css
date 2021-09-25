@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 .login {
@@ -24,15 +24,15 @@
   color: #585858;
 }
 
-.pads{
-	padding: 5rem 3rem;
+.pads {
+  padding: 5rem 3rem;
 }
 
-.color{
+.color {
   color: red;
 }
 
-.homebox{
+.homebox {
   position: relative;
   margin: auto;
   font-size: 20px;
@@ -42,19 +42,20 @@
   border-radius: 10px;
   background: var(--foreground);
   padding: 20px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   border: none;
+  background: #9abcff;
 }
 
-.wOut{
+.wOut {
   font-size: 50px;
 }
 
-.form-control{
+.form-control {
   width: 280px;
 }
 
-.btn2{
+.btn2 {
   outline: none;
   background: rgb(255, 255, 255);
   font-size: 20px;
@@ -63,35 +64,35 @@
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
-  cursor:pointer;
-  transition: all .3s;
+  cursor: pointer;
+  transition: all 0.3s;
   text-decoration: none;
   color: black;
   text-align: center;
 }
-.btn2:hover{
+.btn2:hover {
   background: #dde8ff;
   transform: translateY(-5px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   color: black;
 }
 .btn2:active {
   transform: translateY(-2px);
-  transform: scale(.98);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
-  transition: all .1s;
+  transform: scale(0.98);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
   color: black;
 }
 
-.login-box{
+.login-box {
   margin: auto;
   width: 500px;
-  top:150px;
+  top: 150px;
   position: relative;
   background: #9abcff;
   padding: 40px;
   border-radius: 30px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   border-width: 10px;
   overflow: hidden;
 }
@@ -107,15 +108,15 @@
   border-radius: 10px;
 }
 
-.input-label{
+.input-label {
   margin-bottom: 1%;
   font-size: 20px;
   padding-top: 10px;
 }
 
-.login-button{
+.login-button {
   outline: none;
-  margin-top:30px;
+  margin-top: 30px;
   background: rgb(255, 255, 255);
   font-size: 25px;
   width: 100%;
@@ -123,28 +124,28 @@
   padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
-  cursor:pointer;
-  transition: all .3s;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.login-button:hover{
+.login-button:hover {
   background: #dde8ff;
   transform: translateY(-5px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .login-button:active {
   transform: translateY(-2px);
-  transform: scale(.98);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
-  transition: all .1s;
+  transform: scale(0.98);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
 }
 
-.rememberme{
-  margin-top:30px;
+.rememberme {
+  margin-top: 30px;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: rgb(50, 36, 170);
 }
@@ -162,7 +163,7 @@
   border-radius: 10px;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -188,4 +189,76 @@
   border:none;
   background-color:transparent;
   color: gray;
+} */
+
+.cr {
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #6366f1;
+}
+
+.h {
+  color: white;
+  font-weight: bold;
+}
+
+.h a {
+  color: white;
+}
+
+.sh {
+  color: white;
+}
+
+.u {
+  color: white;
+}
+
+.uh {
+  color: white;
+}
+
+.ui {
+  display: inline;
+}
+
+.uc {
+  display: inline;
+}
+
+.ici {
+  /* display: inline; */
+}
+
+.i {
+  position: relative;
+  bottom: 5px;
+  padding: 0.2rem 0.7rem;
+  background-color: #ff6060;
+  color: #ffffff;
+}
+
+.c {
+  position: relative;
+  bottom: 5px;
+  padding: 0.2rem 0.7rem;
+  background-color: #65ff60;
+  color: #ffffff;
+}
+
+.cbox{
+  position: relative;
+  margin: auto;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: white;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-width: 10px;
 }

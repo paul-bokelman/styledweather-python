@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
+from flask_cors import CORS
 from models import db
 from routes.paul import about_paul, paul_bubblesort, paul_minilab
 from routes.sam import about_sam, sam_bubblesort, sam_minilab
@@ -14,6 +15,7 @@ app.config['SECRET_KEY'] = 'I<+g/P2N$}0GXOf'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['JSON_SORT_KEYS'] = False
 db.init_app(app)
+CORS(app)
 csrf = CSRFProtect(app)
 csrf.init_app(app)
 login_manager.init_app(app)

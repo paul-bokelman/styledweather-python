@@ -1,5 +1,5 @@
 from flask import render_template, Blueprint, request, jsonify
-import requests as r
+import requests
 import json as j
 from models import User, IdealWeather
 
@@ -9,7 +9,7 @@ api = Blueprint('api', __name__)
 @api.route("/", methods=['GET', 'POST'])
 def home():
     userLocation = request.form.get('location', 'san diego') # search
-    x = r.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}", headers={"content-type":"application/json", "key":"25a4dc68b6974dde8af192821212203"}) #Fetch rest api data
+    x = requests.get(f"http://api.weatherapi.com/v1/forecast.json?q={userLocation}", headers={"content-type":"application/json", "key":"25a4dc68b6974dde8af192821212203"}) #Fetch rest api data
     data = j.loads(x.content) #Fetch rest api data
     name = data.get("location").get("name")
     localtime = data.get("location").get("localtime")
@@ -47,3 +47,15 @@ def aiw():
         iw.append({'id': iws.id, 'owner_id': iws.user_id, 'condition': iws.condition, 'temp': iws.temp, 'desc': iws.desc, 'date_added': iws.date_added})
     response = jsonify({'all_ideal_weathers': iw})
     return response, 200
+
+@api.route('/crossover', methods=['GET', 'POST'])
+def crossover():
+
+    u = requests.get("https://antsapi.nighthawkcodingsociety.com/all_users").json()['all_users']
+    r = None
+    if request.method == "POST":
+        usr = request.form.get('user', "kenzie")
+        r = requests.get(f"https://antsapi.nighthawkcodingsociety.com/todos/{usr}").json()['todos']
+
+
+    return render_template('crossover.html', r=r, u=u)
